@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <style>
+       
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+            background-color: rgba(0, 0, 0, 0.39);
+            height: 100vh;
+        }
+        nav{
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.803);
+            overflow: hidden;
+            color: white;
+            position: sticky;
+            top: 0;
+        }
+        nav a{
+            text-decoration: none;
+            float: right;
+            color: white;
+            padding: 20px;
+        }
+      
+        .introducer{
+            padding: 5px;
+            float: left;
+            font-size: 1.5em;
+            font-family:  'Pacifico', cursive;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: 2fr 1.3fr;
+            grid-gap: 150px;
+            width: 70%;
+            margin: auto;
+            margin-top: 85px;
+            margin-bottom: 80px;
+            text-align: center;
+            height:63%;
+        }
+        .description{
+            color: white;
+            background-color:rgba(0, 0, 0, 0.201);
+            font-size: 2em;
+            box-shadow: 8px 8px 3px 3px rgba(0, 0, 0, 0.534);
+            border-radius: 2px;
+            
+        }
+        .image{
+            background-color: aqua;
+            box-shadow: 8px 8px 3px 3px rgba(0, 0, 0, 0.534);
+            border-radius:2px;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            border-radius: 2px;
+        }
+        footer{
+            padding: 100px;
+            background-color: rgba(0, 0, 0, 0.371);
+            overflow: hidden;
+            height: 25vh;
+            text-align: center;
+        }
+       .copyright{
+        padding: 10px 10px 0px 10px;
+        
+        text-decoration: none;
+        color: white;
+       }
+       .fb,.linkdin,.insta{
+       
+        padding: 10px 10px 0px 10px;
+        color: white;
+        transition: color 0.2;
+        text-decoration: none;
+       }
+       .fb:hover,.linkdin:hover,.insta:hover,.copyright:hover{
+        color: black;
+       }
+       .home_hobbies{
+        height: 2px;  
+        width: 90%;   
+        background-color: rgba(0, 0, 0, 0.345);
+        border: 0;
+        margin: auto;
+        margin-top: 40px;
+        margin-bottom: 30px;
+        
+       }
+
+       .hobbies{
+       
+        display: grid;
+        width: 90%;
+       grid-template-columns:1fr 1fr 1fr ;
+       grid-template-rows: 10fr 2fr;
+       height: 90vh;
+       margin: auto;
+       grid-gap: 20px;
+       }
+
+       .hobbie1{
+        background-color: rgba(0, 0, 0, 0.056);
+        grid-row-start: 1;
+        grid-row-end: 3;
+        margin: 40px 0px;
+        color: white;
+        font-size: 1.5em;
+        text-align: center;
+
+       }
+       .hobbie2{
+        background-color: rgba(0, 0, 0, 0.056);
+        grid-column-start: 2;
+        grid-column-end: 3;
+        color: white;
+        font-size: 1.5em;
+        text-align: center;
+
+       }
+       .hobbie3{
+        background-color: rgba(0, 0, 0, 0.056);
+        grid-column-start: 3;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        margin: 40px 0px ;
+        color: white;
+        font-size: 1.5em;
+        text-align: center;
+       }
+       .p{
+        grid-column-start: 2;
+        background-color: rgba(0, 0, 0, 0.056);
+        margin: 20px 0px;
+       text-align: center;
+       font-size: 1.5em;
+       color: white;
+       border-radius: 3px;
+       }
+       .reading{
+        height: 60%;
+       }
+       .swimming{
+        height: 50%;
+       }
+       .dev{
+        height: 50%;
+       }
+       .social{
+        display: inline;
+        padding: 0px 10px;
+       }
+       .p1,.p2{
+        text-align: center;
+        color: white;
+
+       }
+       .p1{
+        font-size: 2.5em;
+       }
+       .p2{
+        font-size: 1.5em;
+       }
+       .end{
+        height: 30vh;
+        padding: 4px;
+       }
+       .hobbies_footer{
+        width: 90%;
+        border: 0;
+        height: 2px;
+        background-color: rgba(0, 0, 0, 0.221);
+       }
+       
+    </style>
+    <title>Personal Website</title>
+</head>
+<body>
+    <nav>
+        <p class="introducer">Raj Vardhan</p>
+        <a href="#">Contacts</a>
+        <a href="#">Hobbies</a>
+        <a href="#">My Journey</a>
+        <a href="#">Home</a>
+    </nav>
+
+
+
+
+     <div class="container">
+          <div class="description">
+            <p>Hey There!</p>
+            
+            <p>It's Raj Vardhan  </p>
+          
+            <p>I am a 2nd year Undergraduate student in Electronic And Communication(ECE) department at IIT ROORKEE</p>
+
+           
+             </div>
+          <div class="image"><img src="images/pic.jpg" alt=""></div>
+     </div>
+     
+
+
+    <hr class="home_hobbies">
+
+
+
+     <div class="hobbies">
+
+
+        <div class="hobbie1"><img src="images/reading1.jpg" alt="" class="reading">
+        <p>I like reading books in my free time, few of the books which I have red - Atomic habits by James Clear, currently i am reading how to win friends and influence people by Dale Carnegie </p>
+        </div>
+
+
+        <div class="hobbie2"><img src="images/webdev.jpg" alt="" class="dev">
+        <p>I am also interested in Web Design and Development I have learnt HTML, CSS but with little practice  and currently learning Javascript </p>
+        </div>
+
+
+        <div class="hobbie3"><img src="images/swimming.png" alt="" class="swimming">
+       <p> I can swim also in other sports I like to play Badminton </p>
+        </div>
+
+
+        <div class="p"><p>Hobbies and Skills</p> </div>
+     </div>
+
+     <hr class="hobbies_footer">
+      <div class="end">
+        <P class="p1">Get In Touch</P>
+        <p class="p2">Come Discuss, Share Ideas, Experience and Grow Together </p>
+      </div>
+    
+
+
+     <footer>
+        <a class="insta" href="#"><ion-icon name="logo-instagram"></ion-icon>   <p class="social">  Instagram</p> </a>
+        <a class="fb" href="https://www.facebook.com/profile.php?id=100077092783272"> <ion-icon name="logo-facebook"></ion-icon><p class="social">Facebook</p></a>
+        <a class="linkdin" href="https://www.linkedin.com/in/raj-vardhan-a99a22235/"><ion-icon name="logo-linkedin"></ion-icon> <p class="social">Linkdin</p></a>
+        <a class="copyright" href="#">&copy; 2022 Raj Vardhan</a>
+        
+     </footer>
+     
+     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
